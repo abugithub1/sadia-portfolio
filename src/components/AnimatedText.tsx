@@ -1,0 +1,42 @@
+"use client";
+
+import { motion } from "framer-motion";
+
+interface AnimatedTextProps {
+  text: string;
+  className?: string;
+  delay?: number;
+  as?: "h1" | "h2" | "h3" | "h4" | "p" | "span";
+}
+
+export function AnimatedText({
+  text,
+  className = "",
+  delay = 0,
+  as: Tag = "h2",
+}: AnimatedTextProps) {
+  const words = text.split(" ");
+
+  return (
+    <Tag className={className}>
+      {words.map((word, i) => (
+        <span key={i} className="inline-block overflow-hidden">
+          <motion.span
+            className="inline-block"
+            initial={{ y: "100%" }}
+            whileInView={{ y: 0 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{
+              duration: 0.6,
+              delay: delay + i * 0.05,
+              ease: [0.16, 1, 0.3, 1],
+            }}
+          >
+            {word}
+          </motion.span>
+          {i < words.length - 1 && "\u00A0"}
+        </span>
+      ))}
+    </Tag>
+  );
+}
