@@ -9,11 +9,14 @@ import { getFeaturedItems, type WorkItem } from "@/data/work";
 
 function CarouselCard({ item }: { item: WorkItem }) {
   if (item.type === "image") {
+    const thumb = item.src
+      .replace("/photography/", "/photography-thumbs/")
+      .replace(/\.jpg$/i, ".webp");
     return (
       <Link href="/work" className="group block flex-none w-72 md:w-80">
         <div className="relative h-52 md:h-60 overflow-hidden bg-surface">
           <Image
-            src={item.src}
+            src={thumb}
             alt={item.title}
             fill
             className="object-cover transition-transform duration-700 group-hover:scale-105"

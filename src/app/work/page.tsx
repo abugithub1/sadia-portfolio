@@ -75,6 +75,12 @@ function PdfCard({ item }: { item: WorkItem }) {
   );
 }
 
+function photoThumb(src: string) {
+  return src
+    .replace("/photography/", "/photography-thumbs/")
+    .replace(/\.jpg$/i, ".webp");
+}
+
 function PhotoCard({ item, onClick }: { item: WorkItem; onClick: () => void }) {
   return (
     <motion.button
@@ -88,12 +94,11 @@ function PhotoCard({ item, onClick }: { item: WorkItem; onClick: () => void }) {
     >
       <div className="relative aspect-[3/2] overflow-hidden bg-surface">
         <Image
-          src={item.src}
+          src={photoThumb(item.src)}
           alt={item.title}
           fill
           className="object-cover transition-transform duration-700 group-hover:scale-105"
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-          unoptimized
         />
         <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-500" />
         <div className="absolute bottom-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">

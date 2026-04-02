@@ -31,7 +31,7 @@ export function Hero() {
       </motion.div>
 
       {/* Gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/60" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-black/80" />
 
       {/* Content */}
       <div className="relative h-full flex flex-col justify-end pb-20 md:pb-28 editorial-container">
