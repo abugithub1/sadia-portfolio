@@ -31,7 +31,7 @@ export function Hero() {
       </motion.div>
 
       {/* Gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-black/80" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/30 to-black/85" />
 
       {/* Content */}
       <div className="relative h-full flex flex-col justify-end pb-20 md:pb-28 editorial-container">
@@ -50,7 +50,7 @@ export function Hero() {
           </motion.p>
 
           <motion.h1
-            className="font-serif text-white leading-[1.1] tracking-tight"
+            className="font-serif !text-white leading-[1.1] tracking-tight"
             style={{ fontSize: "var(--text-display)" }}
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
