@@ -17,7 +17,7 @@ export function ContactContent() {
               className="font-serif text-heading"
               style={{ fontSize: "var(--text-h1)" }}
             >
-              Let&apos;s create something meaningful
+              Let&apos;s work together
             </h1>
           </ScrollReveal>
           <ScrollReveal delay={0.2}>
@@ -25,9 +25,9 @@ export function ContactContent() {
               className="mt-6 text-muted leading-relaxed"
               style={{ fontSize: "var(--text-body-lg)" }}
             >
-              Whether you need publication design, branding, editorial work, or
-              photography for your organization — I&apos;d love to hear about your
-              project and explore how we can work together.
+              Interested in working together to elevate your brand and message?
+              Let&apos;s turn ideas, programmes, and initiatives into stories that
+              inform, inspire, and create lasting impact.
             </p>
           </ScrollReveal>
 
@@ -35,14 +35,12 @@ export function ContactContent() {
           <ScrollReveal delay={0.3}>
             <div className="mt-16 space-y-8">
               <div>
-                <h2 className="font-serif text-heading text-xl mb-4">
-                  Email
-                </h2>
+                <h2 className="font-serif text-heading text-xl mb-4">Email</h2>
                 <a
-                  href="mailto:hello@sadiakarim.com"
+                  href="mailto:mssadiakarim@hotmail.com"
                   className="text-accent hover:text-accent-dark text-lg transition-colors"
                 >
-                  hello@sadiakarim.com
+                  mssadiakarim@hotmail.com
                 </a>
               </div>
 
@@ -50,31 +48,21 @@ export function ContactContent() {
                 <h2 className="font-serif text-heading text-xl mb-4">
                   Location
                 </h2>
-                <p className="text-body">Dhaka, Bangladesh</p>
+                <p className="text-body">Walsall, United Kingdom</p>
               </div>
 
               <div>
                 <h2 className="font-serif text-heading text-xl mb-4">
-                  Social
+                  Connect
                 </h2>
                 <div className="flex gap-6">
                   <a
-                    href="#"
+                    href="https://www.linkedin.com/in/sadia-karim"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-body hover:text-accent transition-colors"
                   >
                     LinkedIn
-                  </a>
-                  <a
-                    href="#"
-                    className="text-body hover:text-accent transition-colors"
-                  >
-                    Behance
-                  </a>
-                  <a
-                    href="#"
-                    className="text-body hover:text-accent transition-colors"
-                  >
-                    Instagram
                   </a>
                 </div>
               </div>

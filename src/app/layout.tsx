@@ -18,28 +18,28 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Sadia Karim — Graphic Designer",
+    default: "Sadia Karim — Brand Strategist & Creative Storyteller",
     template: "%s | Sadia Karim",
   },
   description:
-    "Portfolio of Sadia Karim — Graphic Designer based in Bangladesh with 10+ years of experience in publication design, branding, editorial, and documentary photography for the social sector.",
+    "Portfolio of Sadia Karim — Brand Strategist and Creative Storyteller based in Walsall, UK. 13+ years shaping brand identities, campaigns, and digital experiences for global development and corporate environments.",
   keywords: [
-    "graphic designer",
-    "Bangladesh",
-    "publication design",
-    "branding",
-    "editorial design",
+    "brand strategist",
+    "creative storyteller",
+    "communication strategy",
+    "brand governance",
+    "campaign design",
     "documentary photography",
-    "NGO design",
-    "social sector",
+    "publication design",
+    "UK",
   ],
   authors: [{ name: "Sadia Karim" }],
   openGraph: {
-    title: "Sadia Karim — Graphic Designer",
+    title: "Sadia Karim — Brand Strategist & Creative Storyteller",
     description:
-      "10+ years crafting visual narratives for social impact. Publication design, branding, editorial, and documentary photography.",
+      "13+ years shaping brand identities, campaigns, and digital experiences. Human-centred storytelling for organisations that create change.",
     type: "website",
-    locale: "en_US",
+    locale: "en_GB",
   },
 };
 

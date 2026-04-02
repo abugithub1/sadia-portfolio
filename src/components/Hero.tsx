@@ -21,11 +21,11 @@ export function Hero() {
         }}
       >
         <Image
-          src="/images/hero/DSC02245.webp"
-          alt="Documentary photography by Sadia Karim"
+          src="/images/hero/hero-main.jpg"
+          alt="Sadia Karim — Brand Strategist & Creative Storyteller"
           fill
           priority
-          className="object-cover"
+          className="object-cover object-top"
           sizes="100vw"
         />
       </motion.div>
@@ -46,7 +46,7 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
           >
-            Graphic Designer &middot; Bangladesh
+            Brand Strategist &middot; Creative Storyteller &middot; Walsall, UK
           </motion.p>
 
           <motion.h1
@@ -66,9 +66,9 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1 }}
           >
-            Crafting visual narratives for social impact. 10+ years of
-            publication design, branding, and documentary photography for
-            organizations making a difference.
+            Elevating brands through insight, creativity, and human‑centred
+            storytelling. 13+ years shaping brand identities, campaigns, and
+            digital experiences for global development and corporate environments.
           </motion.p>
 
           <motion.div

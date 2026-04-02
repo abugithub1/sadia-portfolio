@@ -4,28 +4,28 @@ import { ScrollReveal } from "./ScrollReveal";
 
 const capabilities = [
   {
-    title: "Publication Design",
-    description: "Annual reports, books, newsletters, and editorial publications",
+    title: "Strategic Communication",
+    description: "Designing and implementing communication initiatives that translate complex ideas into measurable, impactful results.",
   },
   {
-    title: "Branding",
-    description: "Visual identity, stationery, corporate materials",
+    title: "Brand Governance",
+    description: "Defining how organisations show up — brand identity, narrative frameworks, and consistent visual language across channels.",
   },
   {
-    title: "Editorial Design",
-    description: "Magazines, brochures, leaflets, and campaign materials",
+    title: "Knowledge Resources",
+    description: "Contributing to high-quality publications by editing, coordinating, and managing content from draft to final production.",
   },
   {
     title: "Photography",
-    description: "Documentary and editorial photography for social impact",
+    description: "Documentary and editorial photography that captures moments of resilience, joy, and transformation.",
   },
   {
-    title: "Motion Graphics",
-    description: "Logo animations and promotional video content",
+    title: "Graphic Design",
+    description: "Publications, annual reports, campaigns, infographics, and branded materials that inform and inspire action.",
   },
   {
-    title: "Infographics",
-    description: "Data visualization and visual storytelling",
+    title: "Video & Motion",
+    description: "Logo animations, short films, and documentary video production using Adobe Premiere Pro and DaVinci Resolve.",
   },
 ];
 
@@ -43,7 +43,7 @@ export function Capabilities() {
             className="font-serif text-heading max-w-2xl"
             style={{ fontSize: "var(--text-h2)" }}
           >
-            Design that communicates, educates, and inspires action
+            Work that communicates, educates, and inspires action
           </h2>
         </ScrollReveal>
 

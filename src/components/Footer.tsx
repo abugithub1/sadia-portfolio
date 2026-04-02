@@ -2,8 +2,7 @@ import Link from "next/link";
 
 const footerLinks = [
   { href: "/work", label: "Work" },
-  { href: "/photography", label: "Photography" },
-  { href: "/about", label: "About" },
+  { href: "/about", label: "About Me" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -21,8 +20,8 @@ export function Footer() {
               Sadia Karim
             </Link>
             <p className="mt-3 text-muted text-sm leading-relaxed max-w-xs">
-              Graphic Designer based in Bangladesh. 10+ years crafting visual
-              narratives for social impact.
+              Brand Strategist &amp; Creative Storyteller. 13+ years shaping
+              narratives and brand identities for global impact.
             </p>
           </div>
 
@@ -51,36 +50,28 @@ export function Footer() {
               Get in Touch
             </h4>
             <a
-              href="mailto:hello@sadiakarim.com"
+              href="mailto:mssadiakarim@hotmail.com"
               className="text-body text-sm hover:text-accent transition-colors"
             >
-              hello@sadiakarim.com
+              mssadiakarim@hotmail.com
             </a>
             <div className="flex gap-4 mt-4">
               <a
-                href="#"
+                href="https://www.linkedin.com/in/sadia-karim"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-muted hover:text-accent transition-colors text-sm"
-                aria-label="LinkedIn"
               >
                 LinkedIn
               </a>
-              <a
-                href="#"
-                className="text-muted hover:text-accent transition-colors text-sm"
-                aria-label="Behance"
-              >
-                Behance
-              </a>
             </div>
+            <p className="text-muted text-xs mt-4">Walsall, United Kingdom</p>
           </div>
         </div>
 
         <div className="mt-16 pt-8 border-t border-border flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-muted text-xs">
             &copy; {new Date().getFullYear()} Sadia Karim. All rights reserved.
-          </p>
-          <p className="text-muted text-xs">
-            Designed with care in Bangladesh
           </p>
         </div>
       </div>

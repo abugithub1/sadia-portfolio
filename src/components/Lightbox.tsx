@@ -3,10 +3,13 @@
 import { useEffect, useCallback } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import type { Photo } from "@/data/photography";
+interface LightboxPhoto {
+  src: string;
+  alt: string;
+}
 
 interface LightboxProps {
-  photos: Photo[];
+  photos: LightboxPhoto[];
   currentIndex: number;
   isOpen: boolean;
   onClose: () => void;
