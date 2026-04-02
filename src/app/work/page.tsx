@@ -156,8 +156,8 @@ function VideoCard({ item }: { item: WorkItem }) {
 // ─── Main page ────────────────────────────────────────────────────────────────
 
 export default function WorkPage() {
-  const [activeCategory, setActiveCategory] = useState<WorkCategory>("creative");
-  const [activeSubcategory, setActiveSubcategory] = useState<WorkSubcategory>("photography");
+  const [activeCategory, setActiveCategory] = useState<WorkCategory>("communications");
+  const [activeSubcategory, setActiveSubcategory] = useState<WorkSubcategory>("planning-strategy");
   const [lightboxIndex, setLightboxIndex] = useState<number>(-1);
   const isLightboxOpen = lightboxIndex >= 0;
 
@@ -204,7 +204,7 @@ export default function WorkPage() {
 
         {/* Top-level category tabs */}
         <div className="mt-12 flex border-b border-border">
-          {(["creative", "communications"] as WorkCategory[]).map((cat) => {
+          {(["communications", "creative"] as WorkCategory[]).map((cat) => {
             const labels: Record<WorkCategory, string> = {
               creative: "Creative Work",
               communications: "Communications & Brand Work",
@@ -246,6 +246,18 @@ export default function WorkPage() {
             </button>
           ))}
         </div>
+
+        {/* Subcategory description */}
+        {activeSubcategory === "planning-strategy" && (
+          <p className="mb-10 text-muted max-w-2xl" style={{ fontSize: "var(--text-body-lg)" }}>
+            Designing and implementing strategic communication initiatives that translate complex ideas into measurable, impactful results.
+          </p>
+        )}
+        {activeSubcategory === "knowledge-resources" && (
+          <p className="mb-10 text-muted max-w-2xl" style={{ fontSize: "var(--text-body-lg)" }}>
+            Contributing to high-quality, clear, and consistent publications by editing, coordinating, and managing content from draft to final production.
+          </p>
+        )}
 
         {/* Content grid */}
         <AnimatePresence mode="wait">
