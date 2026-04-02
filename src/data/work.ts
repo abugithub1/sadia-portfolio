@@ -610,6 +610,15 @@ export const workItems: WorkItem[] = [
 
   // ─── Creative Work — The Moving Lens ──────────────────────────────────────────
   {
+    id: 'proud-to-be-emo',
+    title: 'Proud to be Emo',
+    category: 'creative',
+    subcategory: 'moving-lens',
+    type: 'video',
+    src: 'https://www.youtube.com/embed/gQ0nQQY8MNk',
+    featured: true,
+  },
+  {
     id: 'memory-of-love',
     title: 'A Memory of Love',
     category: 'creative',

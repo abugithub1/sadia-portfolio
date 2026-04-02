@@ -35,8 +35,12 @@ function CarouselCard({ item }: { item: WorkItem }) {
   if (item.type === "video") {
     const isAnimation = item.subcategory === "animations";
     const label = isAnimation ? "Animation" : "Film";
+    const isYouTube = item.src.includes("youtube.com/embed");
+    const href = isYouTube
+      ? item.src.replace("embed/", "watch?v=")
+      : "/work";
     return (
-      <Link href="/work" className="group block flex-none w-72 md:w-80">
+      <Link href={href} target={isYouTube ? "_blank" : undefined} rel={isYouTube ? "noopener noreferrer" : undefined} className="group block flex-none w-72 md:w-80">
         <div className="relative h-52 md:h-60 overflow-hidden bg-heading flex items-center justify-center">
           <div className="text-center">
             <svg

@@ -111,6 +111,7 @@ function PhotoCard({ item, onClick }: { item: WorkItem; onClick: () => void }) {
 
 function VideoCard({ item }: { item: WorkItem }) {
   const isAnimation = item.subcategory === "animations";
+  const isYouTube = item.src.includes("youtube.com/embed");
   return (
     <motion.div
       className="group"
@@ -121,13 +122,23 @@ function VideoCard({ item }: { item: WorkItem }) {
       transition={{ duration: 0.3 }}
     >
       <div className="relative aspect-video overflow-hidden bg-heading">
-        <video
-          src={item.src}
-          controls
-          preload="metadata"
-          className="w-full h-full object-contain"
-          playsInline
-        />
+        {isYouTube ? (
+          <iframe
+            src={item.src}
+            title={item.title}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            className="w-full h-full"
+          />
+        ) : (
+          <video
+            src={item.src}
+            controls
+            preload="metadata"
+            className="w-full h-full object-contain"
+            playsInline
+          />
+        )}
       </div>
       <div className="mt-3 px-1">
         <p className="text-xs text-accent uppercase tracking-wider">
